@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Health Survey</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="body">
+        <form class="form" action="/predict" method="post">
+            <div>
+                <label for="HighBP">High Blood Pressure:</label>
+                <input type="radio" name="HighBP" value="1" required> Yes
+                <input type="radio" name="HighBP" value="0" required> No
+            </div>
+            <div>
+                <label for="HighChol">High Cholesterol:</label>
+                <input type="radio" name="HighChol" value="1" required> Yes
+                <input type="radio" name="HighChol" value="0" required> No
+            </div>
+            <div>
+                <label for="BMI">Body Mass Index (BMI):</label>
+                <input type="number" name="BMI" step="0.1" required>
+            </div>
+            <div>
+                <label for="Smoker">Smoker:</label>
+                <input type="radio" name="Smoker" value="1" required> Yes
+                <input type="radio" name="Smoker" value="0" required> No
+            </div>
+            <div>
+                <label for="Stroke">Stroke:</label>
+                <input type="radio" name="Stroke" value="1" required> Yes
+                <input type="radio" name="Stroke" value="0" required> No
+            </div>
+            <div>
+                <label for="PhysActivity">Physical Activity:</label>
+                <input type="radio" name="PhysActivity" value="1" required> Yes
+                <input type="radio" name="PhysActivity" value="0" required> No
+            </div>
+            <div>
+                <label for="AnyHealthcare">Any Healthcare:</label>
+                <input type="radio" name="AnyHealthcare" value="1" required> Yes
+                <input type="radio" name="AnyHealthcare" value="0" required> No
+            </div>
+            <div>
+                <label for="GenHlth">General Health (1-5):</label>
+                <input type="number" name="GenHlth" min="1" max="5" required>
+            </div>
+            <div>
+                <label for="PhysHlth">Physical Health (days):</label>
+                <input type="number" name="PhysHlth" min="0" max="30" required>
+            </div>
+            <div>
+                <label for="DiffWalk">Difficulty Walking:</label>
+                <input type="radio" name="DiffWalk" value="1" required> Yes
+                <input type="radio" name="DiffWalk" value="0" required> No
+            </div>
+            <div>
+                <label for="Sex">Sex:</label>
+                <input type="radio" name="Sex" value="0" required> Male
+                <input type="radio" name="Sex" value="1" required> Female
+            </div>
+            <div>
+                <label for="Age">Age:</label>
+                <input type="number" name="Age" required>
+            </div>
+            <div>
+                <label for="SleepTime">Sleep Time (hours):</label>
+                <input type="number" name="SleepTime" required>
+            </div>
+            <div>
+                <label for="SkinCancer">Skin Cancer:</label>
+                <input type="radio" name="SkinCancer" value="1" required> Yes
+                <input type="radio" name="SkinCancer" value="0" required> No
+            </div>
+            <div>
+                <label for="Asthma">Asthma:</label>
+                <input type="radio" name="Asthma" value="1" required> Yes
+                <input type="radio" name="Asthma" value="0" required> No
+            </div>
+            <div>
+                <label for="KidneyDisease">Kidney Disease:</label>
+                <input type="radio" name="KidneyDisease" value="1" required> Yes
+                <input type="radio" name="KidneyDisease" value="0" required> No
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
